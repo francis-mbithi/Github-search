@@ -3,12 +3,13 @@
     color: dodgerblue;
     text-align: center;
     padding: 15px 18px;
-    font-size: 10px;
+    font-size: 30px;
     text-align: center;
 }
 
 * {box-sizing: border-box;}
 .navbar-dark {
+    text-align: center;
     overflow: hidden;
     background-color: #056b6b;
 }
