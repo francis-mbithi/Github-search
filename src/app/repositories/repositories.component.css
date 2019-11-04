@@ -9,3 +9,9 @@ p {
     margin-top: 30px;
     background-color: #056b5b;
 }
+.search-form p {
+    font-size: 30px;
+    margin: 0;
+    justify-content: left;
+    align-items: left;
+}
