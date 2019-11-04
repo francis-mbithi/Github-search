@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // import {HttpClient} from '@angular/common/http';
 import {HttpClientModule} from '@angular/common/http';
-//import { NgProgressModule } from '@ngx-progressbar/core';
-//import { NgProgressHttpModule } from '@ngx-progressbar/http';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpModule } from '@ngx-progressbar/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navigation/navbar.component';
@@ -36,8 +36,8 @@ import { UpperCasePipe } from './upper-case.pipe';
       RoutingModule,
       RouterModule,
       FormsModule,
-      //NgProgressModule.forRoot(),
-      //NgProgressHttpModule,
+      NgProgressModule,
+      NgProgressHttpModule,
       // HttpClient,
       HttpClientModule
   ],

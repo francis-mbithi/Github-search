@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-    myApi: '20cd900a411e1e6267a2f7f8fa57c276dd6728b1'
+    myApi: 'dfc96b1f0bf246571c502481d0dc5af15d51e079'
 
 };
 

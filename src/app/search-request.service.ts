@@ -57,7 +57,7 @@ export class SearchRequestService {
         }
 
         const myPromise = new Promise((resolve, reject) => {
-            this.http.get<ApiResponse>('https://api.github.com/users/' + searchMe + '/repos?order=created&sort=asc?access_token=' + environment.myApi).toPromise().then(getRepoResponse => {
+            this.http.get<ApiResponse>('https://api.github.com/users/' + searchMe + '/repos?access_token=' + environment.myApi).toPromise().then(getRepoResponse => {
                 this.newRepository = getRepoResponse;
                 resolve();
             }, error => {
@@ -74,17 +74,15 @@ export class SearchRequestService {
         }
 
         const promise = new Promise((resolve, reject) => {
-            this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ' + environment.myApi).toPromise().then(getRepoResponse => {
+            this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' /repos?access_token ' + environment.myApi).toPromise().then(getRepoResponse => {
                 this.searchRepo = getRepoResponse.items;
 
                 resolve();
             }, error => {
-                this.searchRepo = 'error';
+                this.searchRepo = 'francis-mbithi';
                 reject(error);
             });
         });
         return promise;
     }
 }
-
-
