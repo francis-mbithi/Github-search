@@ -1,7 +1,8 @@
-.navbar-dark{
-    padding: 15px 17px;
-    align-content: center;
+.navbar-dark a {
     display: block;
+    color: dodgerblue;
+    text-align: center;
+    padding: 15px 17px;
     font-size: 20px;
-    overflow: hidden;
+    text-align: center;
 }
